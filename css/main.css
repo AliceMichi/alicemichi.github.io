@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 
+body
+{
+    overflow: hidden;
+}
+
 :root
 {
     --pink: rgb(255, 115, 152);
@@ -194,8 +199,4 @@ body
     height: 100%;
     border-left: 1px solid var(--pink);
     background-color: var(--pinkTrans);
-    -webkit-user-select: none;      
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
