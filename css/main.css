@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --pink: rgb(255, 115, 152);
+    --pinkTrans: rgba(255, 115, 152, 0.124);
+    --pinkTransx2: rgba(255, 115, 152, 0.248);
+    --pinkTransx4: rgba(255, 115, 152, 0.496);
+    --pinkHide: rgba(255, 115, 152, 0.05);
+}
+
+*:focus {outline:none !important} /*** Sorry! Accessibilty Mode Inbound ***/
+
+*
+{
+    font-family: 'Inconsolata', monospace;
+    color: var(--pink);
+}
+
+.title
+{
+    margin: 0px 0px 100px 26px;
+}
+
+.iconH
+{
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    fill: var(--pink);
+}
+
+body
+{
+    background-color: #1e1e1e;
+}
+
+.content
+{
+    position: relative;
+    border: 2px solid var(--pink);
+    width: 900px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content .header
+{
+    position: relative;
+    border-bottom: 2px solid var(--pink);
+    background-color: var(--pinkTrans);
+    padding: 2px 2px 2px 4px;
+}
+
+.content .sideNav
+{
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    width: 150px;
+    height: calc(600px - 22px);
+    border-right: 2px solid var(--pink);
+    background-color: var(--pinkTrans);
+}
+
+.content .sideNav svg
+{
+    fill: var(--pinkTrans);
+    stroke: var(--pinkTrans);
+    border-bottom: 1px solid var(--pinkTransx2);
+}
+.content .sideNav svg:hover
+{
+    fill: var(--pinkTransx2);
+    stroke: var(--pinkTransx2);
+}
+
+.content .sideNav .btn
+{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--pinkTrans);
+    
+    text-align: center;
+    border-bottom: 1px solid var(--pinkTrans);
+    padding-top: 6px;
+    cursor: pointer;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content .sideNav .btn:hover
+{
+    background-color: var(--pinkTransx2);
+}
+
+.content .sideNav .footer
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 12px;
+}
+
+.content .body
+{
+    position: absolute;
+    background-color: var(--pinkHide);
+    left: 150px;
+    top: 22px;
+    width: 750px;
+    height: calc(600px - 22px);
+}
+
+.grid-container
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: 2px;
+    width: 725px;
+    height: calc(600px - 45px);
+}
+.grid-item
+{
+    text-align: center;
+}
+
+.grid-item .ficon
+{
+    max-width: 150px;
+    fill: var(--pinkTransx2);
+}
+.grid-item .ficon:hover
+{
+    fill: var(--pinkTransx4);
+}
+
+.grid-item p
+{
+    font-size: 14px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;    
+}
+
+.emailBtn
+{
+    margin-left: 10px;
+    width: 120px;
+    height: 25px;
+    border: 1px solid var(--pinkTransx4);
+    background-color: var(--pinkTrans);
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.emailBtn:hover
+{
+    background-color: var(--pinkTransx2);
+}
+.emailBtn p
+{
+    padding: 4px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.taskBar
+{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    border-top: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
+    background-color: var(--pinkTransx2);
+    display: inline-block;
+}
+
+.taskBar .btn-group button
+{
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+    border-left: 1px solid var(--pink);
+    background-color: var(--pinkTrans);
+}
