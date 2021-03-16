@@ -119,6 +119,13 @@ body
     top: 22px;
     width: 750px;
     height: calc(600px - 22px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content .body img
+{
+    width: 730px;
 }
 
 .grid-container
@@ -200,3 +207,70 @@ body
     border-left: 1px solid var(--pink);
     background-color: var(--pinkTrans);
 }
+
+.projectButton
+{
+    position: relative;
+    height: 24px;
+    background-color: var(--pinkTrans);
+    border-bottom: 1px solid var(--pinkTransx2);
+    cursor: pointer;
+}
+
+.projectButton:hover
+{
+    background-color: var(--pinkTransx2);
+    border-bottom: 1px solid var(--pinkTransx4);
+}
+
+.projectButton p
+{
+    position: absolute;
+    left: 28px;
+    top: 4px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.projectButton svg
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    top: 2px;
+    fill: var(--pinkTransx4);
+}
+
+.content .body img
+{
+    border: 1px solid var(--pinkTransx4);
+}
+.sub
+{
+    margin-left: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--pinkTrans); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--pinkTransx2);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--pinkTransx4);
+  }
